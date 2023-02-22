@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="simoncss.css">
     <title>Play.com</title>
 </head>
-<body>
-    <header> <h1>Simon</h1>
+<body class="bg-dark text-light">
+  <header class="container-fluid">
     <nav class="navbar fixed-top navbar-dark">
       <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
       <menu class="navbar-nav">
@@ -27,88 +27,36 @@
       </menu>
     </nav>
   </header>
-    <hr />
-    <main>
-        <div class="workers">
-            Player: <span class="worker_names">Unknown</span>
+
+  <main class="bg-secondary">
+    <div class="players">
+      Player:
+      <span class="player-name">Mystery player</span>
+    </div>
+    <div class="game">
+      <div class="button-container">
+        <button class="button-top-left"></button>
+        <button class="button-top-right"></button>
+        <button class="button-bottom-left"></button>
+        <button class="button-bottom-right"></button>
+        <div class="controls center">
+          <div class="game-name">Simon<sup>&reg;</sup></div>
+          <div class="score center">--</div>
+          <button class="btn btn-primary">Reset</button>
         </div>
-        <div>
-            <label id="score" for="score">Score</label>
-            <input type="numbers" placeholder="Can't cheat" readonly/>
-        </div>
-        <br />
-        <button type="reset_button">reset_button</button>
-        <div>
-            <table>
-              <tr>
-                <td>
-                  <button>
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 100 100"
-                      height="100"
-                      width="100"
-                    >
-                      <!-- SVG
-                        M move <to x,y>
-                        Q quadratic curve <control point x,y> <to x,y>
-                    -->
-                      <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
-                    </svg>
-                  </button>
-                </td>
-                <td>
-                  <button>
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 100 100"
-                      height="100"
-                      width="100"
-                    >
-                      <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                    </svg>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 100 100"
-                      height="100"
-                      width="100"
-                    >
-                      <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                    </svg>
-                  </button>
-                </td>
-                <td>
-                  <button>
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 100 100"
-                      height="100"
-                      width="100"
-                    >
-                      <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                    </svg>
-                  </button>
-                </td>
-              </tr>
-            </table>
-          </div>
+      </div>
+    </div>
+  </main>
 
-
-
-    </main>
-    <footer>
-        <hr />
-        <p class="text-reset">Kapo</p>   
-            <div>
-        <a href="https://github.com/Kapo1123/Simon">GitHub</a>
-            </div> 
-        </footer>
-    
+  <footer class="bg-dark text-dark text-muted">
+    <div class="container-fluid">
+      <span class="text-reset">Author Name(s)</span>
+      <a
+        class="text-reset"
+        href="https://github.com/webprogramming260/simon-css"
+        >Source</a
+      >
+    </div>
+  </footer>
 </body>
 </html>
